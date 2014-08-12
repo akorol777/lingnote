@@ -59,6 +59,12 @@ body, a { font-family: "Noto Sans", sans-serif; font-size: 14px; line-height: 22
 .add:hover { background: #88cc7a; -webkit-transition-duration: 0.2s; -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both; -webkit-animation-name: bounce; }
 .add:hover span { background: white; }
 
+@-webkit-keyframes bounce { 0%, 65%, 100% { margin-left: 0; margin-top: 0; height: 60px; width: 60px; }
+  10% { margin-left: -8px; margin-top: -8px; height: 76px; width: 76px; }
+  25% { margin-left: 3px; margin-top: 3px; height: 54px; width: 54px; }
+  40% { margin-left: -2px; margin-top: -2px; height: 64px; width: 64px; }
+  50% { margin-left: 1px; margin-top: 1px; height: 58px; width: 58px; } }
+
 /*-----user----------------------------------------------- */
 .user { display: inline-block; position: fixed; top: 5px; right: 10px; height: 63px; min-width: 240px; background-color: whitesmoke; padding: 5px 15px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; *zoom: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .user:after { content: " "; display: table; clear: both; }
