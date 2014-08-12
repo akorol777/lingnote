@@ -6,14 +6,45 @@
 .nav
 	background-color: $main-c
 	width: $nav-w
-	position: absolute
+	position: fixed
 	top: 0
 	left: 0
-	z-index: -1
+	.nav__topper
+		height: $header-h
+		line-height: $header-h
+		border-bottom: 1px solid #000
+		padding-left: 15px 
+		+box
+	.nav__label
+		height: $label-h
+		line-height: $label-h
+		border: 1px solid $label-c
+		color: $label-c
+		padding: 0 15px
+		display: inline-block   
+		+border-radius($label-h/2)
+		+transition
+		&:hover
+			background-color: darken($main-c,5%)
+	.nav__content	
+		padding: 20px 15px 
+		+box
+	.nav__item
+		color: #FFF
+		font-weight: bold 
+		display: block
+		line-height: 45px
+		padding-left: 15px
+		+transition
+		&:hover
+			color: $text-other-c 	
+
 
 /*-----main------------------------------------------------------*/
 .main
-	background-color: #fff 
+	background-color: #fff
+	position: relative 
+	width: 100%
 	+transition
 	+box
 .main-open
@@ -29,6 +60,7 @@
 	border-bottom: 1px solid $border-c  
 	width: 100%
 	background-color: #FFF 
+	z-index: 12
 	+clr
 	+box
 	.header__btn
@@ -46,19 +78,63 @@
 		line-height: $header-h
 /*-----content------------------------------------------------------*/
 .content
-	padding-top: $header-h
+	padding: 70px 60px 20px 160px 
+	padding-top: $header-h+65px
 	max-width: 1200px
 	margin: 0 auto 
 	position: relative
+	+clr
+	.content__left
+		float: left
+		width: 60%
+		margin-right: 5% 
+		+box
+	.content__right
+		float: left	
+		width: 30%
+		+box
+	.content__title
+		font-weight: bold
+		font-size: 24px
+		line-height: 28px
+		margin-bottom: 22px
+	.content__note
+		margin-bottom: 60px
+		p
+			margin-bottom: 22px
+		.strong
+			font-weight: bold		
+	.content__text
+		margin-bottom: 44px
+		position: relative
+		&:after
+			position: absolute
+			content: ""
+			bottom: -22px
+			left: 0px
+			display: inline-block
+			height: 1px
+			width: 80px
+			background-color: $border-c 
+	.content__words
+	.content__context
+		font-style: italic
+		font-family: $noto-serif
+		color: $text-other-c
+		display: block
+		margin-left: 20px  
+
 	.add
-		top: 50px
+		top: 50px+$header-h
 		left: 60px
+		
+		
 
 
 
 /*----add----------------------------------------------------------*/
 .add
-	position: relative
+	position: absolute
 	display: inline-block
 	height: 60px
 	width: 60px
@@ -82,14 +158,14 @@
 			width: 22px
 			margin-top: -1px
 			margin-left: -11px
-.add:hover
-	background: #88cc7a
-	-webkit-transition-duration: .2s
-	-webkit-animation-duration: 1s
-	-webkit-animation-fill-mode: both
-	-webkit-animation-name: bounce
-	span
-		background: #fff
+	&:hover
+		background: #88cc7a
+		-webkit-transition-duration: .2s
+		-webkit-animation-duration: 1s
+		-webkit-animation-fill-mode: both
+		-webkit-animation-name: bounce
+		span
+			background: #fff
 @-webkit-keyframes bounce
 	0%, 65%, 100%
 		margin-left: 0
@@ -126,6 +202,7 @@
 	min-width: 240px
 	background-color: #F5F5F5 
 	padding: 5px 15px 
+	z-index: 13
 	+border-radius(5px)
 	+clr 
 	+box

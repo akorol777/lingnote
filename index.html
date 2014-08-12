@@ -7,12 +7,21 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>	
 </head>
 <body>
 	<div class="wrap">
-		<nav class="nav">nav
+		<nav class="nav">
+			<div class="nav__topper">
+				<a href="#" class="nav__label">New notebook</a>
+			</div>
+			<div class="nav__content">
+				<a href="#" class="nav__item">Taucraft Elementary</a>
+				<a href="#" class="nav__item">My Dictionary</a>
+				<a href="#" class="nav__item">Grammatic</a>
+				<a href="#" class="nav__item">New notebook 1</a>
+			</div>
 		</nav>
 		<!--/.nav-->
 		<div class="main">
@@ -37,6 +46,39 @@
 					<span class="vertical"></span>
 					<span class="horizontal"></span>
 				</div>
+				<div class="content__left">
+					<div class="content__note">
+						<h3 class="content__title">The Air Recycling company</h3>
+						<div class="content__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim non delectus excepturi, ab blanditiis cupiditate, similique fugit magnam sapiente repellat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim non delectus excepturi, ab blanditiis cupiditate, similique fugit magnam sapiente repellat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim non delectus excepturi, ab blanditiis cupiditate, similique fugit magnam sapiente repellat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim beatae, quas officia nemo nostrum officiis. Asperiores repudiandae molestiae nostrum perferendis, voluptas quibusdam, suscipit fuga <em>excepturi</em> assumenda vero, eos cum vel.</p>		
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim beatae, quas officia nemo nostrum officiis. Asperiores repudiandae molestiae nostrum <em>perferendis</em>, voluptas quibusdam, suscipit fuga excepturi assumenda vero, eos cum vel.</p>
+						</div>	
+						<div class="content__words">
+							<p><span class="strong">a headword</span> - заглавное слово</p>
+							<p><span class="strong">a derivative</span> - производное слово</p>
+							<p><span class="strong">an inflection</span> - окончание</p>
+						</div>											
+					</div>
+					<div class="content__note">
+						<h3 class="content__title">New words from the video</h3>
+						<div class="content__words">
+							<p><span class="strong">Find out</span> - разузнать
+								<span class="content__context">We shell find out</span>	
+							</p>
+							<p><span class="strong">Perchance</span> - может быть</p>
+							<p><span class="strong">Seam</span> - казаться
+								<span class="content__context">All my troubles seemed so far away</span>
+							</p>		
+							<p><span class="strong">Cause</span> - ведь
+								<span class="content__context">Cause there's something between us anyway</span>	
+							</p>							
+						</div>											
+					</div>					
+				</div>
+				<div class="content__right">for comments</div>	
 			</div>
 		</div>
 		<!--/.main-->
