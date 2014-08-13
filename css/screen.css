@@ -30,10 +30,10 @@ em { font-family: "Noto Serif", serif; }
 
 .ico { display: inline-block; vertical-align: middle; }
 
-.nav, .main { height: 100%; display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.nav, .main { display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /*-----nav------------------------------------------------------ */
-.nav { background-color: #333333; width: 280px; position: fixed; top: 0; left: 0; }
+.nav { background-color: #333333; width: 280px; position: fixed; top: 0; left: 0; height: 100%; }
 .nav .nav__topper { height: 55px; line-height: 55px; border-bottom: 1px solid black; padding-left: 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .nav .nav__label { height: 30px; line-height: 30px; border: 1px solid #88cc7a; color: #88cc7a; padding: 0 15px; display: inline-block; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .nav .nav__label:hover { background-color: #262626; }
@@ -52,19 +52,19 @@ em { font-family: "Noto Serif", serif; }
 .header:after { content: " "; display: table; clear: both; }
 .header .header__btn { display: inline-block; height: 11px; width: 26px; line-height: 55px; margin-right: 10px; background: url('../img/icons-sa02c8a0853.png') 0 -30px no-repeat; width: 26px; height: 11px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .header .header__btn:hover { -webkit-transform: scaleX(1.2); -moz-transform: scaleX(1.2); -ms-transform: scaleX(1.2); -o-transform: scaleX(1.2); transform: scaleX(1.2); }
-.header .header__title { display: inline-block; line-height: 55px; }
+.header .header__title { display: inline-block; font-size: 12px; line-height: 55px; }
 
 /*-----content------------------------------------------------------ */
 .content { padding: 70px 60px 20px 160px; padding-top: 120px; max-width: 1200px; margin: 0 auto; position: relative; *zoom: 1; }
 .content:after { content: " "; display: table; clear: both; }
 .content .content__left { float: left; width: 60%; margin-right: 5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .content .content__right { float: left; width: 30%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.content .content__title { font-weight: bold; font-size: 24px; line-height: 28px; margin-bottom: 22px; }
-.content .content__note { margin-bottom: 60px; }
-.content .content__note p { margin-bottom: 22px; }
+.content .content__title { font-weight: bold; font-size: 24px; line-height: 28px; margin-bottom: 12px; }
+.content .content__note { margin-bottom: 50px; }
+.content .content__note p { margin-bottom: 10px; }
 .content .content__note .strong { font-weight: bold; }
-.content .content__text { margin-bottom: 44px; position: relative; }
-.content .content__text:after { position: absolute; content: ""; bottom: -22px; left: 0px; display: inline-block; height: 1px; width: 80px; background-color: #e6e6e6; }
+.content .content__text { margin-bottom: 30px; position: relative; }
+.content .content__text:after { position: absolute; content: ""; bottom: -16px; left: 0px; display: inline-block; height: 1px; width: 80px; background-color: #e6e6e6; }
 .content .content__context { font-style: italic; font-family: "Noto Serif", serif; color: gray; display: block; margin-left: 20px; }
 .content .add { top: 105px; left: 60px; }
 
@@ -89,8 +89,8 @@ em { font-family: "Noto Serif", serif; }
 .user .user__pic:hover { -webkit-box-shadow: 0px 0px 3px #333333; -moz-box-shadow: 0px 0px 3px #333333; box-shadow: 0px 0px 3px #333333; }
 .user .user__pic img { height: auto; max-width: 100%; }
 .user .user__info { margin-left: 42px; }
-.user .user__name { font-family: "Noto Sans", sans-serif; font-weight: bold; }
+.user .user__name { font-family: "Noto Sans", sans-serif; font-size: 12px; font-weight: bold; padding-top: 5px; }
 .user .user__btn { *zoom: 1; }
 .user .user__btn:after { content: " "; display: table; clear: both; }
-.user .user__btn a { float: left; color: gray; margin-right: 15px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.user .user__btn a { float: left; color: gray; margin-right: 15px; font-size: 12px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .user .user__btn a:hover { color: #4f88fe; }

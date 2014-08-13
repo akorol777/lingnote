@@ -1,5 +1,5 @@
 .nav, .main
-	height: 100%
+	//height: 100%
 	display: block
 	+box	
 /*-----nav------------------------------------------------------*/
@@ -9,6 +9,7 @@
 	position: fixed
 	top: 0
 	left: 0
+	height: 100%
 	.nav__topper
 		height: $header-h
 		line-height: $header-h
@@ -38,8 +39,6 @@
 		+transition
 		&:hover
 			color: $text-other-c 	
-
-
 /*-----main------------------------------------------------------*/
 .main
 	background-color: #fff
@@ -75,6 +74,7 @@
 			+transform(scaleX(1.2))	
 	.header__title	
 		display: inline-block
+		font-size: 12px
 		line-height: $header-h
 /*-----content------------------------------------------------------*/
 .content
@@ -97,26 +97,25 @@
 		font-weight: bold
 		font-size: 24px
 		line-height: 28px
-		margin-bottom: 22px
+		margin-bottom: 12px
 	.content__note
-		margin-bottom: 60px
+		margin-bottom: 50px
 		p
-			margin-bottom: 22px
+			margin-bottom: 10px
 		.strong
 			font-weight: bold		
 	.content__text
-		margin-bottom: 44px
+		margin-bottom: 30px
 		position: relative
 		&:after
 			position: absolute
 			content: ""
-			bottom: -22px
+			bottom: -16px
 			left: 0px
 			display: inline-block
 			height: 1px
 			width: 80px
 			background-color: $border-c 
-	.content__words
 	.content__context
 		font-style: italic
 		font-family: $noto-serif
@@ -127,11 +126,6 @@
 	.add
 		top: 50px+$header-h
 		left: 60px
-		
-		
-
-
-
 /*----add----------------------------------------------------------*/
 .add
 	position: absolute
@@ -224,13 +218,16 @@
 		margin-left: $user-pic-h+10px
 	.user__name	
 		font-family: $noto-sans
-		font-weight: bold  
+		font-size: 12px
+		font-weight: bold 
+		padding-top: 5px 
 	.user__btn
 		+clr
 		a
 			float: left
 			color: $text-other-c
 			margin-right: 15px
+			font-size: 12px
 			+transition
 			&:hover
 				color: $link-hover-c 
