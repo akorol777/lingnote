@@ -33,7 +33,7 @@ em { font-family: "Noto Serif", serif; }
 .nav, .main { display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /*-----nav------------------------------------------------------ */
-.nav { background-color: #333333; width: 280px; position: fixed; top: 0; left: 0; height: 100%; }
+.nav { background-color: #333333; width: 280px; position: fixed; top: 0; left: 0; height: 100%; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 @media only screen and (max-width: 320px) { .nav { z-index: 111; left: -280px; } }
 .nav .nav__topper { height: 55px; line-height: 55px; border-bottom: 1px solid black; padding-left: 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .nav .nav__label { height: 30px; line-height: 30px; border: 1px solid #88cc7a; color: #88cc7a; padding: 0 15px; display: inline-block; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
