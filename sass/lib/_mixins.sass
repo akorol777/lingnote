@@ -24,7 +24,8 @@ $w1024: 1024px
 $w960: 960px
 $w900: 900px
 $w860: 860px
-$w800: 800px    
+$w800: 800px
+$w768: 768px    
 $w760: 760px
 $w700: 700px
 
@@ -35,13 +36,6 @@ $w400: 400px
 $w360: 360px
 $w320: 320px
 
-$w991: 991px
-$w767: 767px
-$w479: 479px
-
-$w1055: 1055px
-$w800: 800px
-$w505: 505px
 
 
 
@@ -50,28 +44,14 @@ $w505: 505px
 
 =r($media)
 
-	@if $media == w1055
-		@media only screen and (max-width: $w1055)
-			@content
-	@if $media == w800
-		@media only screen and (max-width: $w800)
-			@content
-	@if $media == w505
-		@media only screen and (max-width: $w505)
-			@content						
 
-	@if $media == w991
-		@media only screen and (max-width: $w991)
+	@if $media == w768
+		@media only screen and (max-width: $w768)
 			@content
-	@if $media == w767
-		@media only screen and (max-width: $w767)
-			@content
-	@if $media == w700
-		@media only screen and (max-width: $w700)
-			@content		
-	@if $media == w479
-		@media only screen and (max-width: $w479)
-			@content
+						
+
+
+		
 
 
 	@if $media == w1280

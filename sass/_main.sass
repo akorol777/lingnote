@@ -10,6 +10,9 @@
 	top: 0
 	left: 0
 	height: 100%
+	+r(w320)
+		z-index: 111
+		left: -$nav-w 
 	.nav__topper
 		height: $header-h
 		line-height: $header-h
@@ -38,7 +41,9 @@
 		padding-left: 15px
 		+transition
 		&:hover
-			color: $text-other-c 	
+			color: $text-other-c 
+.nav-open
+	left: 0				
 /*-----main------------------------------------------------------*/
 .main
 	background-color: #fff
@@ -51,6 +56,8 @@
 	.header .header__btn
 		width: 0
 		margin-right: 0
+	+r(w320)
+		margin-left: 0		
 /*-----header------------------------------------------------------*/
 .header
 	position: fixed
@@ -62,6 +69,8 @@
 	z-index: 12
 	+clr
 	+box
+	+r(w320)
+		padding: 0 15px 
 	.header__btn
 		display: inline-block
 		height: 11px
@@ -76,6 +85,18 @@
 		display: inline-block
 		font-size: 12px
 		line-height: $header-h
+		+r(w560)
+			visibility: hidden
+	.add
+		display: none
+		+r(w768)
+			display: block
+			top: -3px
+			left: 50%
+			margin-left: -30px 
+			border: none
+			+transform(none)
+			
 /*-----content------------------------------------------------------*/
 .content
 	padding: 70px 60px 20px 160px 
@@ -84,20 +105,41 @@
 	margin: 0 auto 
 	position: relative
 	+clr
+	+r(w1024)
+		padding-left: 100px
+		padding-top: $header-h+45px 
+	+r(w768)
+		padding-left: 60px
+	+r(w320)
+		padding: 70px 20px 20px 20px
+		padding-top: $header-h+15px
 	.content__left
 		float: left
 		width: 60%
 		margin-right: 5% 
 		+box
+		+r(w1024)
+			width: 70%main
+			margin-right: 2%
+		+r(w768)
+			width: 100%
+			margin-right: 0	
 	.content__right
 		float: left	
 		width: 30%
 		+box
+		+r(w1024)
+			width: 28%
+		+r(w768)
+			display: none 			
 	.content__title
 		font-weight: bold
 		font-size: 24px
 		line-height: 28px
 		margin-bottom: 12px
+		+r(w320)
+			font-size: 20px
+			margin-bottom: 7px
 	.content__note
 		margin-bottom: 50px
 		p
@@ -122,10 +164,14 @@
 		color: $text-other-c
 		display: block
 		margin-left: 20px  
-
 	.add
 		top: 50px+$header-h
 		left: 60px
+		+r(w1024)
+			top: 25px+$header-h
+			left: 20px
+		+r(w768)
+			display: none	
 /*----add----------------------------------------------------------*/
 .add
 	position: absolute
@@ -136,6 +182,8 @@
 	border: 1px solid #88cc7a
 	cursor: pointer
 	-webkit-transition-duration: .2s
+	+r(w1024)
+		+transform(scale(0.8))
 	span
 		position: absolute
 		display: inline-block
@@ -193,13 +241,17 @@
 	top: 5px
 	right: 10px
 	height: 63px
-	min-width: 240px
+	width: 240px
 	background-color: #F5F5F5 
 	padding: 5px 15px 
 	z-index: 13
+	+transition
 	+border-radius(5px)
 	+clr 
-	+box
+	+box 
+	+r(w560)
+		background-color: transparent
+		right: -185px
 	.user__pic
 		float: left
 		display: inline-block
@@ -231,3 +283,7 @@
 			+transition
 			&:hover
 				color: $link-hover-c 
+.user-open	
+	+r(w560)
+		right: 10px
+		background-color: #F5F5F5 					
