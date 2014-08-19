@@ -148,19 +148,19 @@ em { font-family: "Noto Serif", serif; }
 .add-min:hover span { background: white; }
 
 @-webkit-keyframes bounce-min { 0%, 65%, 100% { margin-left: 0; margin-top: 0; height: 50px; width: 50px; }
-  10% { margin-left: -8px; margin-top: -8px; height: 66px; width: 66px; }
+  10% { margin-left: -2px; margin-top: -2px; height: 54px; width: 54px; }
   25% { margin-left: 3px; margin-top: 3px; height: 44px; width: 44px; }
   40% { margin-left: -2px; margin-top: -2px; height: 54px; width: 54px; }
   50% { margin-left: 1px; margin-top: 1px; height: 48px; width: 48px; } }
 
 @-moz-keyframes bounce-min { 0%, 65%, 100% { margin-left: 0; margin-top: 0; height: 50px; width: 50px; }
-  10% { margin-left: -8px; margin-top: -8px; height: 66px; width: 66px; }
+  10% { margin-left: -2px; margin-top: -2px; height: 54px; width: 54px; }
   25% { margin-left: 3px; margin-top: 3px; height: 44px; width: 44px; }
   40% { margin-left: -2px; margin-top: -2px; height: 54px; width: 54px; }
   50% { margin-left: 1px; margin-top: 1px; height: 48px; width: 48px; } }
 
 @keyframes bounce-min { 0%, 65%, 100% { margin-left: 0; margin-top: 0; height: 50px; width: 50px; }
-  10% { margin-left: -8px; margin-top: -8px; height: 66px; width: 66px; }
+  10% { margin-left: -2px; margin-top: -2px; height: 54px; width: 54px; }
   25% { margin-left: 3px; margin-top: 3px; height: 44px; width: 44px; }
   40% { margin-left: -2px; margin-top: -2px; height: 54px; width: 54px; }
   50% { margin-left: 1px; margin-top: 1px; height: 48px; width: 48px; } }
