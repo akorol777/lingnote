@@ -6,15 +6,14 @@ $(document).ready(function() {
 		return false;
 	});
 	$(this).click(function(){
-		//$('.main').removeClass('main-open');
-		//$('.nav').removeClass('nav-open');
 		$('.user').removeClass('user-open');
 		return false;
 	});
 
-	$('.content').click(function(){
+	$('.content, .header').click(function(){
 		$('.nav').removeClass('nav-open');
 		$('.main').removeClass('main-open');
+		$('.user').removeClass('user-open');		
 		return false;
 	});	
 
@@ -27,10 +26,6 @@ $(document).ready(function() {
 		$('.user').toggleClass('user-open');
 		return false;
 	});
-	
-	// $('.nav-open').click(function(){
-	// 	return false;
-	// });	
 
 });
 

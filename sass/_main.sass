@@ -56,9 +56,10 @@
 			+border-radius(5px)
 	.nav__item-point
 		position: absolute
-		bottom: 18px
+		bottom: -2px
 		right: 0px
 		display: block
+		height: 20px
 		+transition
 		+clr
 		span
@@ -82,7 +83,7 @@
 		z-index: 11  
 		background-color: #ccc
 		padding: 10px
-		display: none
+		display: none		
 		+transition 
 		+border-radius(5px)
 		+clr
@@ -107,16 +108,20 @@
 		&:hover
 			color: $cancel-c
 .nav-open
-	left: 0				
+	left: 0	
+	z-index: 2
+	 			
 /*-----main------------------------------------------------------*/
 .main
 	background-color: #fff
 	position: relative 
 	width: 100%
+	z-index: 3
 	+transition
 	+box
 .main-open
 	margin-left: $nav-w
+	z-index: 1
 	.header .header__btn
 		display: none
 	.header__title
