@@ -26,7 +26,7 @@ body, a { font-family: "Noto Sans", sans-serif; font-size: 14px; line-height: 22
 
 em { font-family: "Noto Serif", serif; }
 
-.wrap { width: 100%; min-width: 320px; height: 100%; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.wrap { width: 100%; min-width: 320px; height: 100%; position: relative; background-color: #333333; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .ico { display: inline-block; vertical-align: middle; }
 
