@@ -140,6 +140,7 @@ em { font-family: "Noto Serif", serif; }
 
 .add-min { position: absolute; display: inline-block; display: none; height: 50px; width: 50px; border-radius: 35px; border: 1px solid #88cc7a; cursor: pointer; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; transition-duration: 0.2s; }
 @media only screen and (max-width: 768px) { .add-min { display: inline-block; top: 2px; left: 47.5%; border: none; } }
+@media only screen and (max-width: 480px) { .add-min { left: 43.5%; } }
 .add-min span { position: absolute; display: inline-block; top: 50%; left: 50%; background: #88cc7a; }
 .add-min span.vertical { height: 22px; width: 2px; margin-top: -11px; margin-left: -1px; }
 .add-min span.horizontal { height: 2px; width: 22px; margin-top: -1px; margin-left: -11px; }
