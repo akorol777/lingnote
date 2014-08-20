@@ -34,6 +34,15 @@
 	.nav__content	
 		padding: 20px 15px 
 		+box
+	.nav__item-out
+		position: relative
+		&:hover
+			.nav__item-point
+				span
+					+opacity(0.2)	
+				&:hover
+					span
+						+opacity(1)					
 	.nav__item
 		color: #FFF
 		font-weight: bold 
@@ -44,26 +53,27 @@
 		padding-left: 15px
 		outline: none
 		position: relative
+		overflow: hidden
 		+transition
 		&:hover
 			color: $text-other-c
 			.nav__item-point
 				cursor: pointer
-				span
-					+opacity(0.2)			
-				&:hover
-					span
-						+opacity(1)
 		&:focus
 			background-color: #fff
 			color: $main-c
 			+border-radius(3px)
+			.nav__item-point
+				cursor: default
+	.nav__item:focus + .nav__item-point
+		display: none					
 	.nav__item-point
 		position: absolute
 		bottom: -2px
 		right: 0px
 		display: block
 		height: 20px
+		cursor: pointer
 		+transition
 		+clr
 		span
@@ -78,12 +88,10 @@
 		&:hover
 			span
 				+opacity(1)
-			.nav__item-popup
-				//display: inline-block	
 	.nav__item-popup
 		position: absolute
 		top: 45px
-		right: -70px
+		right: -58px
 		display: inline-block
 		//width: 135px
 		z-index: 11  
@@ -91,7 +99,7 @@
 		padding: 10px
 		display: none	
 		text-align: center	
-		+transition 
+		//+transition 
 		+border-radius(5px)
 		+clr
 		&:before
@@ -110,19 +118,18 @@
 			padding: 0 5px 	
 	.popup-open
 		display: inline-block	
-	.nav__item-roll
-		//+clr
 	.nav__item-lose
 		font-weight: bold
 		display: block
 		font-size: 0
 		height: 0
 		line-height: 0
-		+transition
 	.lose-open
-		font-size: 12px 	
-		height: 22px
-		line-height: 22px
+		right: -70px 
+		.nav__item-lose
+			font-size: 12px 	
+			height: 22px
+			line-height: 22px
 	.link-out
 		display: table
 		width: 100%
