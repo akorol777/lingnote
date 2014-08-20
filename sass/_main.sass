@@ -44,16 +44,20 @@
 		padding-left: 15px
 		outline: none
 		position: relative
+		+transition
 		&:hover
 			color: $text-other-c
 			.nav__item-point
 				cursor: pointer
 				span
-					+opacity(0.5)			
+					+opacity(0.2)			
+				&:hover
+					span
+						+opacity(1)
 		&:focus
 			background-color: #fff
 			color: $main-c
-			+border-radius(5px)
+			+border-radius(3px)
 	.nav__item-point
 		position: absolute
 		bottom: -2px
@@ -72,18 +76,21 @@
 			+border-radius(4px)
 			+transition
 		&:hover
+			span
+				+opacity(1)
 			.nav__item-popup
-				display: inline-block	
+				//display: inline-block	
 	.nav__item-popup
 		position: absolute
-		top: 13px
+		top: 45px
 		right: -70px
 		display: inline-block
-		width: 135px
+		//width: 135px
 		z-index: 11  
 		background-color: #ccc
 		padding: 10px
-		display: none		
+		display: none	
+		text-align: center	
 		+transition 
 		+border-radius(5px)
 		+clr
@@ -99,11 +106,36 @@
 			border-width: 0 5px 5px 5px
 			border-color: transparent transparent #ccc transparent
 			display: inline-block
+		.nav__item-link
+			padding: 0 5px 	
+	.popup-open
+		display: inline-block	
+	.nav__item-roll
+		//+clr
+	.nav__item-lose
+		font-weight: bold
+		display: block
+		font-size: 0
+		height: 0
+		line-height: 0
+		+transition
+	.lose-open
+		font-size: 12px 	
+		height: 22px
+		line-height: 22px
+	.link-out
+		display: table
+		width: 100%
+		border-collapse: collapse					
 	.nav__item-link
-		float: left
-		margin: 0 5px 
+		//float: left
+		//margin: 0 5px 
 		z-index: 11
 		cursor: pointer
+		display: table-cell
+		text-align: center
+		font-weight: normal
+		font-size: 12px
 		+transition
 		&:hover
 			color: $cancel-c
