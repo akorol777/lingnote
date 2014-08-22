@@ -26,7 +26,8 @@
 		border: 1px solid $label-c
 		color: $label-c
 		padding: 0 15px
-		display: inline-block   
+		display: inline-block 
+		font-size: 12px  
 		+border-radius($label-h/2)
 		+transition
 		&:hover
@@ -44,38 +45,44 @@
 					span
 						+opacity(1)					
 	.nav__item
-		color: #FFF
+		color: $text-other-c
 		font-weight: bold 
 		display: block
-		line-height: 45px
-		height: 45px
+		line-height: 32px
+		height: 32px
 		white-space: nowrap
-		padding-left: 15px
+		padding-left: 10px
 		outline: none
 		position: relative
 		overflow: hidden
 		+transition
 		&:hover
-			color: $text-other-c
+			color: #FFF
 			.nav__item-point
 				cursor: pointer
 		&:focus
 			background-color: #fff
 			color: $main-c
-			+border-radius(3px)
+			+border-radius(2px)
 			.nav__item-point
 				cursor: default
+	.is-active
+		color: #FFF 			
 	.nav__item:focus + .nav__item-point
 		display: none					
 	.nav__item-point
 		position: absolute
-		bottom: -2px
-		right: 0px
+		bottom: -4px
+		right: -13px
 		display: block
-		height: 20px
+		height: 40px
+		width: 40px
 		cursor: pointer
+		//background: #f0f
+		padding: 15px 5px  
 		+transition
 		+clr
+		+box
 		span
 			background-color: #FFF
 			height: 4px
@@ -95,8 +102,8 @@
 		display: inline-block
 		//width: 135px
 		z-index: 11  
-		background-color: #ccc
-		padding: 10px
+		background-color: #f2f2f2
+		padding: 10px 20px
 		display: none	
 		text-align: center	
 		//+transition 
@@ -146,6 +153,8 @@
 		+transition
 		&:hover
 			color: $cancel-c
+	.link-cancel
+		color: $cancel-c				
 .nav-open
 	left: 0	
 	z-index: 2
@@ -155,6 +164,7 @@
 	background-color: #fff
 	position: relative 
 	width: 100%
+	height: 100%
 	z-index: 3
 	+transition
 	+box
@@ -194,6 +204,8 @@
 	max-width: 1200px
 	margin: 0 auto 
 	position: relative
+	background-color: #FFF 
+	//height: 100%
 	+clr
 	+r(w1024)
 		padding-left: 100px
@@ -721,4 +733,15 @@
 	100%
 		opacity: 1
 		width: 28px
-		left: 23px				
+		left: 23px	
+		
+hr
+	//position: absolute
+	//content: "" 
+	//top: 0
+	//left: 0
+	border: none 
+	display: inline-block
+	height: 1px
+	width: 80px
+	background-color: #e6e6e6
