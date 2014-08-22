@@ -49,7 +49,7 @@ em { font-family: "Noto Serif", serif; }
 .nav .nav__item:focus .nav__item-point { cursor: default; }
 .nav .is-active { color: white; }
 .nav .nav__item:focus + .nav__item-point { display: none; }
-.nav .nav__item-point { position: absolute; bottom: -4px; right: -13px; display: block; height: 40px; width: 40px; cursor: pointer; padding: 15px 5px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; *zoom: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.nav .nav__item-point { position: absolute; bottom: -10px; right: -13px; display: block; height: 40px; width: 40px; cursor: pointer; padding: 15px 5px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; *zoom: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .nav .nav__item-point:after { content: " "; display: table; clear: both; }
 .nav .nav__item-point span { background-color: white; height: 4px; width: 4px; margin-left: 3px; float: left; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .nav .nav__item-point:hover span { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
